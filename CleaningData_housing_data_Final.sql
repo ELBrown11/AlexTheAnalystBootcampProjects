@@ -1,6 +1,6 @@
 -------------------------------------------------------------------------------------------------------
 -------------------------------------------------------------------------------------------------------
--- 										CLEANING DATA                                                --
+-- 				       CLEANING DATA                                                --
 -------------------------------------------------------------------------------------------------------
 -------------------------------------------------------------------------------------------------------
 -- preview the data 
@@ -9,7 +9,7 @@ FROM BootcampDB.NashvilleHousingData nhd
 LIMIT 10;
 
 -------------------------------------------------------------------------------------------------------
--- 							        STANDARDIZED DATE FORMAT                                         --
+-- 		                   STANDARDIZED DATE FORMAT                                          --
 /*
  We want to format the date in short form because the time part of the date time doesn't provide 
  any information in this case. To this we add a column called SaleDateConverted which will contain
@@ -27,7 +27,7 @@ SET SaleDateConverted = STR_TO_DATE(SaleDate , '%m/%d/%Y %H:%i:%s')
 
 
 -------------------------------------------------------------------------------------------------------
--- 				                POPULATE PROPERTY ADDRESS DATA                                       --
+-- 			        POPULATE PROPERTY ADDRESS DATA                                       --
 /*
  There are certain rows where the PropertyAddress data is missing in that row but the data is in a 
  row. The ParcelID and UniqueID can be use to identify that a row is for the same property and 
@@ -42,8 +42,8 @@ WHERE PropertyAddress IS NULL;
 -- self join to compare rows with missing data with ifnull column where that missing data would be populated
 SELECT nhd.ParcelID, nhd.PropertyAddress, nhd2.ParcelID, nhd2.PropertyAddress, 
 		IFNULL(nhd.PropertyAddress, nhd2.PropertyAddress)/*this function say if the first argument 
-														   is empty/null replace it with the second 
-														   argument*/
+								   is empty/null replace it with the second 
+								   argument*/
 FROM BootcampDB.NashvilleHousingData nhd 
 JOIN BootcampDB.NashvilleHousingData nhd2 
 	ON nhd.ParcelID = nhd2.ParcelID 
@@ -60,7 +60,7 @@ SET nhd.PropertyAddress = IFNULL(nhd.PropertyAddress, nhd2.PropertyAddress)
 WHERE nhd.PropertyAddress IS NULL;
 
 ------------------------------------------------------------------------------------------------------
--- 					 BREAKING UP ADDRESS INTO COLUMNS (ADDRESS, CITY, STATE)                        --
+-- 		     BREAKING UP ADDRESS INTO COLUMNS (ADDRESS, CITY, STATE)                        --
 /*
 We want to break the PropertyAddress and OwnerAddress column into address city and state columns 
 because in their original format they are less usuable. When broken down into seperate columns we're
@@ -155,11 +155,12 @@ FROM BootcampDB.NashvilleHousingData nhd
 GROUP BY SoldAsVacant 
 ORDER BY 2 DESC;
 
-/*After doing some exploration of the SoldAsVacant column we see that there are 4 different responses
- * but the Ns and Ys actually indicate No and Yes. Yes and No are also captured more frequently so 
- * to make this data more uniform and easy to analyze we need to chane the Ns --> No's and Ys --> Yes's.
- * We can do this via CASE WHEN which is similar to a python if statement but use it to replace the Y and
- * N data*/
+/*
+After doing some exploration of the SoldAsVacant column we see that there are 4 different responses
+but the Ns and Ys actually indicate No and Yes. Yes and No are also captured more frequently so 
+to make this data more uniform and easy to analyze we need to chane the Ns --> No's and Ys --> Yes's.
+We can do this via CASE WHEN which is similar to a python if statement but use it to replace the Y and
+N data*/
 
 -- testing the implementatio of CASE WHEN
 SELECT SoldAsVacant,
