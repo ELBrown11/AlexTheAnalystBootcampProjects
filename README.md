@@ -5,14 +5,14 @@ During this bootcamp I learned how to use 5 different technologies to analyze da
 There are lessons on each of the technologies and projects. 
 
 ## TOPICS COVERED AND PROJECTS
-* SQL
+* **SQL**
   * [Data Cleaning Project](https://github.com/ELBrown11/AlexTheAnalystBootcampProjects/blob/main/CleaningData_housing_data_Final.sql)
   * [Data Exploration Project](https://github.com/ELBrown11/AlexTheAnalystBootcampProjects/blob/main/DataExploration_covid_data.sql)
-* Excel
+* **Excel**
   * [Dashboard Project](https://github.com/ELBrown11/AlexTheAnalystBootcampProjects/blob/main/Bootcamp%20Portfolio%20Project_%20Excel.xlsx)
-* Tableau
+* **Tableau**
   * 1 project
-* PowerBI
+* **PowerBI**
   * 1 project   
-* Python
+* **Python**
   * 4 projects 
