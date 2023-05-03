@@ -12,6 +12,7 @@ This bootcamp taught by Alex Freberg provides participants with the knowledge an
 * **Excel**
   * [Dashboard Project](https://github.com/ELBrown11/AlexTheAnalystBootcampProjects/blob/main/Bootcamp%20Portfolio%20Project_%20Excel.xlsx)
   * <img width="653" alt="Screenshot 2023-05-03 at 5 43 54 PM" src="https://user-images.githubusercontent.com/34903672/236056661-8e599b5d-c16d-4d51-84f0-a92df1f5ad9c.png">
+  * [link](https://docs.google.com/spreadsheets/d/1qRg_K2vQbs3DOzKBVtLGSUCGDpe3xGTv0bZaebH4EFE/edit?usp=sharing)
 
 * **Tableau**
   * 1 project
