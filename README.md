@@ -4,7 +4,8 @@ This bootcamp includes lesson on 5 different technologies used by data analysts.
 It also includes lesson on each technologies and projects. 
 ## TOPICS COVERED
 * SQL
-  * 2 projects
+  * [Data Cleaning Project](https://github.com/ELBrown11/AlexTheAnalystBootcampProjects/blob/main/CleaningData_housing_data_Final.sql)
+  * [Data Exploration Project]()
 * Excel
   * 1 project 
 * Tableau
