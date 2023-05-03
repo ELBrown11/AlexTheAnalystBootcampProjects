@@ -5,7 +5,7 @@ It also includes lesson on each technologies and projects.
 ## TOPICS COVERED
 * SQL
   * [Data Cleaning Project](https://github.com/ELBrown11/AlexTheAnalystBootcampProjects/blob/main/CleaningData_housing_data_Final.sql)
-  * [Data Exploration Project]()
+  * [Data Exploration Project](https://github.com/ELBrown11/AlexTheAnalystBootcampProjects/blob/main/DataExploration_covid_data.sql)
 * Excel
   * 1 project 
 * Tableau
