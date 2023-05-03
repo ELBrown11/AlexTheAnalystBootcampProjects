@@ -1,8 +1,9 @@
 # DATA ANALYST BOOTCAMP VIA YOUTUBE
 https://www.youtube.com/playlist?list=PLUaB-1hjhk8FE_XZ87vPPSfHqb6OcM0cF
 
-During this bootcamp I learned how to use 5 different technologies to analyze data.
-There are lessons on each of the technologies and projects. 
+This bootcamp taught by Alex Freberg provides participants with the knowledge and skills needed to analyze and interpret complex data sets.During the course of the bootcamp, you learn a variety of skills, including data visualization, dashboarding, data cleaning, data exploration, You also learn the programming language Python and work with popular data analysis tools and platforms such as SQL, Tableau, and Excel/Google Sheets.
+
+
 
 ## TOPICS COVERED AND PROJECTS
 * **SQL**
