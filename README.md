@@ -25,9 +25,3 @@ using STR_TO_DATE to reformat the date and SUBSTR  to separate address, city, an
   * <img width="653" alt="Screenshot 2023-05-03 at 5 43 54 PM" src="https://user-images.githubusercontent.com/34903672/236056661-8e599b5d-c16d-4d51-84f0-a92df1f5ad9c.png">
   * [Google Sheets Link](https://docs.google.com/spreadsheets/d/1qRg_K2vQbs3DOzKBVtLGSUCGDpe3xGTv0bZaebH4EFE/edit?usp=sharing)
 
-* **Tableau**
-  * 1 project
-* **PowerBI**
-  * 1 project   
-* **Python**
-  * 4 projects 
